@@ -34,13 +34,13 @@ print(“hour:”, hour , “min:”,min , “sec:”, sec)
 https://dev.to/kcdchennai/python-decorator-to-measure-execution-time-54hk
 
 
-Import time
+import time
 def timer(func_name):
 	def inner():
 		start = time.time()
 		data = func_name()
 		end = time.time()
-		print(f“runtime is {end-start:.2f} seconds”)
+		print(f“runtime for fucntion {fun_name.__name__} is {end-start:.2f} seconds”)
 		return data
 	return inner
 @timer
@@ -85,6 +85,22 @@ $ jupyter nbconvert --to python Notebook.ipynb
 This generates the file Notebook.py, which only contains executable Python code (or if IPython extensions were used in the notebook; a file that is executable with ipython). The noncode content of the notebook is also included in the resulting Python code file in the form of comments that do not prevent the file from being interpreted by the Python interpreter. Converting a notebook to pure Python code is useful, for example, when using the Jupyter Notebooks to develop functions and classes that need to be imported in other Python files or notebooks.
 
 
+
+############# string formatting #########################
+print(f'{6:.1%}')
+print(f'{100.14567995:<10.4f}abc')
+print(f'{100.14567995:<10.4e}abc')
+print(f'{100.14567995:^18.2f}abc')
+print(f'{1000000.14567995:18.2f}abc')
+
+print(f'{"abc":<5}{"bcd":<5}{abc:<12.0f}bc')
+print(f'[{"Amanda":>10}]\n[{"Amanda":^10}]\n[{"Amanda":<10}]')
+f'[{27:+010d}]'
+f'{123456.78:,.2f}'
+print(f'{10240.473:+10,.2f}\n{-3210.9521:+10,.2f}')
+print(f'{0:+06d}')
+
+###########################################################
 
 
 
