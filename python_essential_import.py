@@ -5,6 +5,7 @@ https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
 %matplotlib inline
 %config InlineBackend.figure_format = 'retina'
 Import numexpr as ne
+from functools import wraps
 inspecting a Python decorator : check this subject in gmail.
 np.random.seed(0)
 
@@ -102,6 +103,28 @@ print(f'{0:+06d}')
 
 ###########################################################
 
+ 
+def timer(func):
+#     @wraps(func)
+    def inner(*args , **kargs):
+        print("inside timer function")
+        start = time.time()
+        data =  func(*args , **kargs)
+        end = time.time()
+        print(f'runtime for function {func.__name__} {args=} {kargs=} {end-start:.2f} seconds')
+        return data
+    return inner
+
+
+
+@timer
+def mult_(x,y,z):
+    print("inside mult_")
+    time.sleep(2)
+
+    return x*y
+
+#########################################################################
 
 
 
