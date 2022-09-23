@@ -24,7 +24,7 @@ To load the code of a .py file:
 def times():
 	global startTime
 startTime = time.time() # Your code here !
-def timee():a
+def timee():
 	global endtime
 endtime = time.time() ; runtime = endtime - starttime
 min,sec = divmod(runtime , 60 ) ; hour,min = divmod(min,60)
