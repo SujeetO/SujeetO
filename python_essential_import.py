@@ -4,7 +4,7 @@ https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/
 
 %matplotlib inline
 %config InlineBackend.figure_format = 'retina'
-Import numexpr as ne
+import numexpr as ne  ; ### to speed up
 from functools import wraps
 inspecting a Python decorator : check this subject in gmail.
 np.random.seed(0)
