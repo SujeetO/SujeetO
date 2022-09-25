@@ -94,12 +94,23 @@ print(f'{100.14567995:<10.4e}abc')
 print(f'{100.14567995:^18.2f}abc')
 print(f'{1000000.14567995:18.2f}abc')
 
-print(f'{"abc":<5}{"bcd":<5}{abc:<12.0f}bc')
+print(f'{"abc":<5}{"bcd":<5}{abc:<12.0f}bc{"abc":^78}')
 print(f'[{"Amanda":>10}]\n[{"Amanda":^10}]\n[{"Amanda":<10}]')
 f'[{27:+010d}]'
 f'{123456.78:,.2f}'
 print(f'{10240.473:+10,.2f}\n{-3210.9521:+10,.2f}')
 print(f'{0:+06d}')
+company_name = "Tesla"
+employee_count = 100000
+mission = "To accelerate the world's transition to sustainable energy"
+
+print(f"""
+Company: {company_name}
+# of employees: {employee_count:,}
+Mission: {mission}
+""")
+
+https://medium.com/bitgrit-data-science-publication/python-f-strings-tricks-you-should-know-7ce094a25d43
 
 ###########################################################
 
