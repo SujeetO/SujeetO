@@ -24,6 +24,10 @@ https://towardsdatascience.com/useful-pip-commands-in-data-science-6632c7fd2d0a
 to create a new venv:
 python3 -m venv ./junk/myenv
 
+suppose you want to create a new venv for 3.11:
+/home/abc/def/python-.11/bin/python -m venv ./my_python_311_venv
+after this acticvate this and install the packages.
+
 -------------------
 # create a conda environment
 conda create --name yourenvname python=3.8
