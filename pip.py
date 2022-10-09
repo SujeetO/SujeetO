@@ -38,4 +38,5 @@ conda activate yourenvname
 # install pycaret
 pip install pycaret
 -------------------------------------------
-##################################
+################################## important module to install #############
+pip install jupyter-resource-usage
