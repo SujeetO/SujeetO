@@ -39,4 +39,6 @@ conda activate yourenvname
 pip install pycaret
 -------------------------------------------
 ################################## important module to install #############
+https://towardsdatascience.com/5-jupyter-extensions-to-improve-your-productivity-8d7977340439
+ 
 pip install jupyter-resource-usage
