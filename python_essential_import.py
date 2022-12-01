@@ -112,6 +112,8 @@ Mission: {mission}
 
 https://medium.com/bitgrit-data-science-publication/python-f-strings-tricks-you-should-know-7ce094a25d43
 
+https://fstring.help/cheat/
+
 ###########################################################
 
  
