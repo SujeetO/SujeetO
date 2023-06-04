@@ -14,6 +14,7 @@ pip install -r requirements.txt
 
 pip install -U modin
 pip uninstall modin
+pip install pandas_dq -U --user --ignore-installed
 
 pip list: to get version of all installed modules.
 pip show numpy : to get verbose info for numpy module
